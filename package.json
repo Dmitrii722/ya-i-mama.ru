@@ -1,0 +1,17 @@
+{
+  "name": "ya-i-mama",
+  "version": "1.0.0",
+  "description": "Сайт-визитка развивающих студий Я и МАМА — Ирина Сергеевна Кичигина",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npx serve src -p 3000"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "sharp": "^0.33.5",
+    "terser": "^5.37.0"
+  }
+}

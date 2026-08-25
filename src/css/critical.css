@@ -1,0 +1,16 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --sand:#D4C4A8;--mint:#A8C5B8;--ivory:#F5F0E8;--bronze:#8B7355;
+  --stone:#5C5650;--wood:#C4A882;--deep:#2E2A26;--fog:rgba(245,240,232,.92);
+  --serif:"Cormorant Garamond",Georgia,serif;
+  --sans:"Source Sans 3",system-ui,sans-serif;
+  --ease:cubic-bezier(.4,0,.2,1);--header:4.5rem
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);font-size:1rem;line-height:1.65;color:var(--deep);background:var(--ivory);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+.skip-link{position:absolute;top:-100%;left:1rem;z-index:9999;padding:.75rem 1rem;background:var(--deep);color:var(--ivory)}
+.skip-link:focus{top:1rem}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--header);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(1rem,4vw,3rem);background:linear-gradient(180deg,rgba(245,240,232,.95),rgba(245,240,232,0));backdrop-filter:blur(8px)}
+.hero{min-height:100vh;min-height:100dvh;display:grid;align-items:center;padding:calc(var(--header) + 2rem) clamp(1rem,4vw,3rem) 3rem}

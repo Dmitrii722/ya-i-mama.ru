@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Развивающие студии Я и МАМА — Монтессори 0–3 года и логоритмика. Ирина Сергеевна Кичигина. Запись на бесплатную диагностику.">
+  <meta name="theme-color" content="#F5F0E8">
+  <title>Я и МАМА — Развивающие студии для детей</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;600&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--sand:#D4C4A8;--mint:#A8C5B8;--ivory:#F5F0E8;--bronze:#8B7355;--stone:#5C5650;--deep:#2E2A26;--fog:rgba(245,240,232,.92);--serif:"Cormorant Garamond",Georgia,serif;--sans:"Source Sans 3",system-ui,sans-serif;--ease:cubic-bezier(.4,0,.2,1);--header:4.5rem}html{scroll-behavior:smooth}body{font-family:var(--sans);font-size:1rem;line-height:1.65;color:var(--deep);background:var(--ivory);overflow-x:hidden}.site-header{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--header);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(1rem,4vw,3rem);background:linear-gradient(180deg,rgba(245,240,232,.95),rgba(245,240,232,0));backdrop-filter:blur(8px)}.hero{min-height:100vh;min-height:100dvh;display:grid;align-items:center;padding:calc(var(--header) + 2rem) clamp(1rem,4vw,3rem) 3rem}</style>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="assets/images/blog-logorhythmics-signs.webp" type="image/webp">
+</head>
+<body>
+  <a href="#main" class="skip-link">Перейти к содержанию</a>
+
+  <div class="bg-canvas" aria-hidden="true"></div>
+  <div class="bg-texture" aria-hidden="true"></div>
+  <div class="fog-layer" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="index.html" class="logo" aria-label="Я и МАМА — на главную">Я <span>и</span> МАМА</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Открыть меню">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav" class="main-nav" aria-label="Основная навигация">
+      <ul>
+        <li><a href="#about">О педагоге</a></li>
+        <li><a href="#studios">Студии</a></li>
+        <li><a href="#programs">Программы</a></li>
+        <li><a href="#methodology">Методика</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#contact">Запись</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="scroll-container">
+
+    <!-- Экран 1: Hero -->
+    <section class="hero screen visible" id="hero" aria-label="Главная">
+      <div class="floating-materials" aria-hidden="true">
+        <div class="float-item"></div>
+        <div class="float-item"></div>
+        <div class="float-item"></div>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-cover-title">
+            <p class="annotation">Коллекционное издание · Выпуск I</p>
+            <h1>Развивающие студии для детей</h1>
+            <span class="issue">2026</span>
+          </div>
+          <p class="hero-lead">Путь от учителя начальных классов к педагогу Монтессори и логоритмики. Пространство, где ребёнок растёт в собственном ритме — рядом с мамой.</p>
+          <div class="hero-stats" role="group" aria-label="Ключевые показатели">
+            <div class="stat-item">
+              <div class="stat-number" data-count="8">0</div>
+              <div class="stat-label">лет опыта</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="120" data-suffix="+">0</div>
+              <div class="stat-label">выпускников</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="2">0</div>
+              <div class="stat-label">направления</div>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Записаться на диагностику</a>
+            <a href="#studios" class="btn btn-outline">Выбрать студию</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <picture>
+            <source srcset="assets/images/hero-studio.webp" type="image/webp">
+            <img src="assets/images/hero-studio.webp" alt="Тёплая студия Монтессори с деревянными материалами и мягким светом" width="800" height="450" fetchpriority="high">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 2: Приветствие и о педагоге -->
+    <section class="screen" id="about" aria-labelledby="about-title">
+      <div class="screen-inner">
+        <div class="section-label"><span>О педагоге</span></div>
+        <div class="about-grid">
+          <div class="about-portrait">
+            <picture>
+              <source srcset="assets/images/teacher-portrait.webp" type="image/webp">
+              <img src="assets/images/teacher-portrait.webp" alt="Ирина Сергеевна Кичигина — педагог Монтессори и логоритмики" width="480" height="640" loading="lazy">
+            </picture>
+            <p class="caption">Ирина Сергеевна Кичигина · основатель студий «Я и МАМА»</p>
+          </div>
+          <div class="about-text">
+            <h2 id="about-title">Добро пожаловать в пространство «Я и МАМА»</h2>
+            <p class="annotation">«Каждый ребёнок — отдельная вселенная. Моя задача — помочь ему раскрыться»</p>
+            <p>Меня зовут Ирина Сергеевна Кичигина. Я прошла путь от учителя начальных классов до сертифицированного педагога Монтессори для детей от 0 до 3 лет и специалиста по логоритмике. За 8 лет работы с детьми я убедилась: развитие начинается не с давления, а с доверия, подготовленной среды и бережного сопровождения.</p>
+            <p>Студии «Я и МАМА» — это место, где мама остаётся рядом, а ребёнок учится самостоятельности. Два направления — Монтессори и логоритмика — дополняют друг друга и готовят малыша к уверенной жизни и школе.</p>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-year">2016 — настоящее время</div>
+                <p>Частная практика: начальные классы, раннее развитие</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">Сертификация</div>
+                <p>Педагог Монтессори 0–3 · Логоритмика · Логопедия</p>
+              </div>
+            </div>
+            <h3>Сертификаты</h3>
+            <div class="certificates-grid">
+              <button class="cert-thumb" data-full="assets/images/certificate-montessori.webp" aria-label="Открыть сертификат Монтессори">
+                <img src="assets/images/certificate-montessori.webp" alt="Сертификат педагога Монтессори" width="140" height="187" loading="lazy">
+                <span>Монтессори 0–3</span>
+              </button>
+              <button class="cert-thumb" data-full="assets/images/certificate-logopedics.webp" aria-label="Открыть сертификат логопедии">
+                <img src="assets/images/certificate-logopedics.webp" alt="Сертификат логопедии и логоритмики" width="140" height="187" loading="lazy">
+                <span>Логопедия</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 3: Студии -->
+    <section class="screen" id="studios" aria-labelledby="studios-title">
+      <div class="screen-inner">
+        <div class="section-label"><span>Направления</span></div>
+        <h2 id="studios-title">Две студии — один путь развития</h2>
+        <p class="annotation">Выберите направление и погрузитесь в атмосферу занятий</p>
+        <div class="studios-grid" style="margin-top: 2.5rem;">
+          <a href="montessori.html" class="studio-portal" data-fog-link aria-label="Перейти на страницу студии Монтессори">
+            <picture>
+              <source srcset="assets/images/montessori-materials.webp" type="image/webp">
+              <img src="assets/images/montessori-materials.webp" alt="Монтессори-материалы: деревянные пособия для малышей" width="600" height="450" loading="lazy">
+            </picture>
+            <div class="studio-portal-content">
+              <span class="studio-tag">0–3 года · Вт, Пт</span>
+              <h3>Студия Монтессори</h3>
+              <p>Самостоятельность, подготовленная среда, смешанный возраст. Занятия 2 раза в неделю.</p>
+              <span class="btn btn-outline" style="color: var(--ivory); border-color: var(--ivory);">Войти в студию</span>
+            </div>
+          </a>
+          <a href="logorhythmics.html" class="studio-portal" data-fog-link aria-label="Перейти на страницу студии логоритмики">
+            <picture>
+              <source srcset="assets/images/logorhythmics-studio.webp" type="image/webp">
+              <img src="assets/images/logorhythmics-studio.webp" alt="Студия логоритмики с музыкальными и движковыми пособиями" width="600" height="450" loading="lazy">
+            </picture>
+            <div class="studio-portal-content">
+              <span class="studio-tag">3–7 лет · Подготовка к школе</span>
+              <h3>Студия Логоритмика</h3>
+              <p>Речь, мышление, координация через движение и музыку. Готовность к школе в игровой форме.</p>
+              <span class="btn btn-outline" style="color: var(--ivory); border-color: var(--ivory);">Войти в студию</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 4: Программы -->
+    <section class="screen" id="programs" aria-labelledby="programs-title">
+      <div class="screen-inner">
+        <div class="section-label"><span>Программы и курсы</span></div>
+        <h2 id="programs-title">Прозрачный выбор для вашей семьи</h2>
+        <div class="programs-grid" style="margin-top: 2rem;">
+          <article class="program-card">
+            <h4>Монтессори «Малыш и мама»</h4>
+            <div class="program-meta">
+              <span>0–1.5 года</span>
+              <span>45 мин</span>
+              <span>2 раза/нед</span>
+            </div>
+            <p>Мягкая адаптация к группе, сенсорное развитие, практическая жизнь с участием мамы.</p>
+            <p><strong>Ребёнок получит:</strong> уверенность, моторику, первые навыки самостоятельности.</p>
+            <div class="program-price">4 500 ₽/мес</div>
+          </article>
+          <article class="program-card">
+            <h4>Монтессори «Самостоятельный исследователь»</h4>
+            <div class="program-meta">
+              <span>1.5–3 года</span>
+              <span>60 мин</span>
+              <span>Вт, Пт</span>
+            </div>
+            <p>Смешанный возраст, свобода выбора, материалы для математики и языка.</p>
+            <p><strong>Ребёнок получит:</strong> концентрацию, социальные навыки, любовь к познанию.</p>
+            <div class="program-price">5 500 ₽/мес</div>
+          </article>
+          <article class="program-card">
+            <h4>Логоритмика «Первые шаги»</h4>
+            <div class="program-meta">
+              <span>3–4 года</span>
+              <span>45 мин</span>
+              <span>2 раза/нед</span>
+            </div>
+            <p>Ритм, речь, координация через игру. Работа с мелкой и крупной моторикой.</p>
+            <p><strong>Ребёнок получит:</strong> чёткую речь, ритмическое чувство, уверенность в движении.</p>
+            <div class="program-price">4 800 ₽/мес</div>
+          </article>
+          <article class="program-card">
+            <h4>Логоритмика «Школа близко»</h4>
+            <div class="program-meta">
+              <span>5–7 лет</span>
+              <span>60 мин</span>
+              <span>2 раза/нед</span>
+            </div>
+            <p>Подготовка к школе: чтение, письмо, счёт через движение. Диагностика готовности.</p>
+            <p><strong>Ребёнок получит:</strong> школьную зрелость, усидчивость, пространственное мышление.</p>
+            <div class="program-price">5 800 ₽/мес</div>
+          </article>
+        </div>
+        <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--stone);">Первое занятие — бесплатная диагностика. Стоимость уточняется при записи.</p>
+      </div>
+    </section>
+
+    <!-- Экран 5: Методика -->
+    <section class="screen" id="methodology" aria-labelledby="method-title">
+      <div class="screen-inner">
+        <div class="section-label"><span>Методика</span></div>
+        <h2 id="method-title">Как мы работаем с каждым ребёнком</h2>
+        <p>Профессиональный процесс от первой встречи до регулярной обратной связи с родителями.</p>
+        <div class="steps">
+          <div class="step-card">
+            <h4>Диагностика</h4>
+            <p>Бесплатная встреча: наблюдение, беседа с мамой, определение потребностей ребёнка.</p>
+          </div>
+          <div class="step-card">
+            <h4>Индивидуальный план</h4>
+            <p>Подбор программы, материалов и темпа. Учитываем возраст, темперамент, цели семьи.</p>
+          </div>
+          <div class="step-card">
+            <h4>Занятия</h4>
+            <p>Регулярные занятия в малых группах. Без крика и принуждения — через уважение и среду.</p>
+          </div>
+          <div class="step-card">
+            <h4>Обратная связь</h4>
+            <p>После каждого блока — рекомендации для дома, отчёт о прогрессе, корректировка плана.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 6: Погружение -->
+    <section class="screen" id="immersion" aria-labelledby="immersion-title">
+      <div class="screen-inner">
+        <div class="section-label"><span>Погружение</span></div>
+        <h2 id="immersion-title">Виртуальный тур по студиям</h2>
+        <p class="annotation">Снизим тревожность первого визита — посмотрите, где будет ваш ребёнок</p>
+        <div class="tour-tabs" role="tablist">
+          <button class="tour-tab active" data-tab="tour-montessori" role="tab" aria-selected="true">Монтессори</button>
+          <button class="tour-tab" data-tab="tour-logo" role="tab" aria-selected="false">Логоритмика</button>
+        </div>
+        <div id="tour-montessori" class="tour-panel active" role="tabpanel">
+          <div class="tour-gallery">
+            <picture>
+              <source srcset="assets/images/montessori-room-tour.webp" type="image/webp">
+              <img src="assets/images/montessori-room-tour.webp" alt="Интерьер студии Монтессори: низкие полки, зеркало, зона практической жизни" width="800" height="500" loading="lazy">
+            </picture>
+            <picture>
+              <source srcset="assets/images/montessori-materials.webp" type="image/webp">
+              <img src="assets/images/montessori-materials.webp" alt="Крупный план монтессори-материалов на деревянном столе" width="400" height="500" loading="lazy">
+            </picture>
+          </div>
+          <p style="margin-top: 1.5rem;">Тёплый свет, натуральные материалы, порядок на уровне глаз ребёнка. Здесь нет шумных игрушек — только пособия, которые развивают концентрацию и самостоятельность.</p>
+        </div>
+        <div id="tour-logo" class="tour-panel" role="tabpanel">
+          <div class="tour-gallery">
+            <picture>
+              <source srcset="assets/images/logorhythmics-studio.webp" type="image/webp">
+              <img src="assets/images/logorhythmics-studio.webp" alt="Зал логоритмики с ковриками и музыкальными инструментами" width="800" height="500" loading="lazy">
+            </picture>
+            <picture>
+              <source srcset="assets/images/logorhythmics-class.webp" type="image/webp">
+              <img src="assets/images/logorhythmics-class.webp" alt="Занятие логоритмикой: движение с лентами и ритмическими упражнениями" width="400" height="500" loading="lazy">
+            </picture>
+          </div>
+          <p style="margin-top: 1.5rem;">Просторный зал, мягкие коврики, музыкальные инструменты и пространство для движения. Атмосфера радости и свободы — ребёнок учится через игру.</p>
+        </div>
+        <h3 style="margin-top: 2rem;">Правила студии</h3>
+        <ul class="studio-rules">
+          <li>Мама остаётся на занятии для детей до 1.5 лет</li>
+          <li>Обувь сменная, без каблуков — для безопасности малышей</li>
+          <li>Тихий голос — мы уважаем концентрацию каждого ребёнка</li>
+          <li>Фото и видео — только с согласия всех родителей группы</li>
+          <li>Болеющих детей просим остаться дома — забота о группе</li>
+          <li>Опоздание до 10 минут — тихий вход, после — следующее занятие</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Экран 7: Индивидуальный подход -->
+    <section class="screen" id="individual" aria-labelledby="individual-title">
+      <div class="screen-inner">
+        <div class="section-label"><span>Индивидуальный подход</span></div>
+        <h2 id="individual-title">Каждый ребёнок — отдельная история</h2>
+        <div class="split-layout">
+          <div>
+            <p>Я не использую единый шаблон для всех. На диагностике наблюдаю, как ребёнок взаимодействует с материалами, как реагирует на новизну, какой у него темп. Это определяет стартовую точку и динамику занятий.</p>
+            <div class="arguments">
+              <div class="argument-item">
+                <span class="argument-num">01</span>
+                <div>
+                  <strong>Застенчивый малыш</strong>
+                  <p>Начинаем с индивидуальных мини-занятий, постепенно вводим в группу по 5 минут.</p>
+                </div>
+              </div>
+              <div class="argument-item">
+                <span class="argument-num">02</span>
+                <div>
+                  <strong>Гиперактивный ребёнок</strong>
+                  <p>Больше телесных активностей, короткие блоки, чёткий ритуал начала и конца занятия.</p>
+                </div>
+              </div>
+              <div class="argument-item">
+                <span class="argument-num">03</span>
+                <div>
+                  <strong>Задержка речи</strong>
+                  <p>Комбинируем Монтессори-материалы для языка с элементами логоритмики.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <picture>
+            <source srcset="assets/images/maria-montessori-stilllife.webp" type="image/webp">
+            <img src="assets/images/maria-montessori-stilllife.webp" alt="Редакционная композиция: книги, геометрические тела, заметки — дух метода Монтессори" width="600" height="450" loading="lazy">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 8: Отзывы -->
+    <section class="screen" id="reviews" aria-labelledby="reviews-title">
+      <div class="screen-inner">
+        <div class="section-label"><span>Отзывы</span></div>
+        <h2 id="reviews-title">Социальное доказательство</h2>
+        <div class="reviews-carousel" aria-label="Карусель отзывов">
+          <div class="reviews-track">
+            <article class="review-card">
+              <blockquote>«Дочка пришла в 1.5 года — боялась всего нового. Через месяц сама бежит к полкам с материалами. Ирина Сергеевна — невероятно тактичный педагог.»</blockquote>
+              <p class="review-author">— Елена, мама Алисы · Монтессори</p>
+            </article>
+            <article class="review-card">
+              <blockquote>«Сын готовился к школе через логоритмику. Речь стала чётче, научился читать слоги. Главное — ему нравится ходить, не заставляем.»</blockquote>
+              <p class="review-author">— Марина, мама Максима · Логоритмика</p>
+            </article>
+            <article class="review-card">
+              <blockquote>«Ценю обратную связь после каждого месяца. Всегда знаю, над чем работаем и что делать дома. Это не просто занятия — это партнёрство.»</blockquote>
+              <p class="review-author">— Анна, мама Софии · оба направления</p>
+            </article>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-btn" data-carousel-prev aria-label="Предыдущий отзыв">&larr;</button>
+            <button class="carousel-btn" data-carousel-next aria-label="Следующий отзыв">&rarr;</button>
+          </div>
+        </div>
+        <div class="widget-row" data-lazy-block>
+          <div class="review-widget" aria-label="Отзывы на Яндекс.Картах">
+            <iframe data-src="https://yandex.ru/maps-reviews-widget/1234567890?comments" title="Отзывы Яндекс.Карты" loading="lazy"></iframe>
+          </div>
+          <div class="review-widget" aria-label="Отзывы на 2ГИС">
+            <iframe data-src="https://widgets.2gis.com/?id=firm&id=70000000000000000&type=firm&size=medium" title="Отзывы 2ГИС" loading="lazy"></iframe>
+          </div>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.8rem; color: var(--stone);">Замените ID организации в настройках виджетов на актуальные из вашего профиля Яндекс.Карт и 2ГИС.</p>
+      </div>
+    </section>
+
+    <!-- Экран 9: Блог -->
+    <section class="screen" id="blog" aria-labelledby="blog-title">
+      <div class="screen-inner">
+        <div class="section-label"><span>Блог</span></div>
+        <h2 id="blog-title">Полезные материалы для родителей</h2>
+        <div class="blog-grid" style="margin-top: 2rem;">
+          <article class="blog-card">
+            <picture>
+              <source srcset="assets/images/blog-logorhythmics-signs.webp" type="image/webp">
+              <img src="assets/images/blog-logorhythmics-signs.webp" alt="Ритмические палочки и ленты — материалы логоритмики" width="400" height="250" loading="lazy">
+            </picture>
+            <div class="blog-card-body">
+              <h4>5 признаков, что ребёнку нужна логоритмика</h4>
+              <p>Неразборчивая речь, плохая координация, трудности с ритмом — когда стоит обратиться к специалисту.</p>
+              <span class="read-more">Читать статью</span>
+            </div>
+          </article>
+          <article class="blog-card">
+            <picture>
+              <source srcset="assets/images/prepared-environment-home.webp" type="image/webp">
+              <img src="assets/images/prepared-environment-home.webp" alt="Подготовленная среда дома: низкая полка с корзинами и игрушками" width="400" height="250" loading="lazy">
+            </picture>
+            <div class="blog-card-body">
+              <h4>Подготовленная среда дома: 10 вещей за 3000 ₽</h4>
+              <p>Как организовать пространство для малыша без дорогих покупок — практичный список от педагога.</p>
+              <span class="read-more">Читать статью</span>
+            </div>
+          </article>
+          <article class="blog-card">
+            <picture>
+              <source srcset="assets/images/maria-montessori-stilllife.webp" type="image/webp">
+              <img src="assets/images/maria-montessori-stilllife.webp" alt="Книги и материалы Монтессори — мифы и реальность" width="400" height="250" loading="lazy">
+            </picture>
+            <div class="blog-card-body">
+              <h4>Монтессори с рождения: мифы и реальность</h4>
+              <p>Разбираем популярные заблуждения о методе и объясняем, что работает для детей 0–3 лет.</p>
+              <span class="read-more">Читать статью</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 10: FAQ -->
+    <section class="screen" id="faq" aria-labelledby="faq-title">
+      <div class="screen-inner">
+        <div class="section-label"><span>FAQ</span></div>
+        <h2 id="faq-title">Частые вопросы</h2>
+        <div class="faq-list" style="margin-top: 2rem;">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Сколько длится занятие?</button>
+            <div class="faq-answer"><p>Монтессори для малышей — 45 минут, для детей постарше — 60 минут. Логоритмика — от 45 до 60 минут в зависимости от возраста. Мы учитываем естественный ритм внимания ребёнка.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Можно ли прийти на пробное?</button>
+            <div class="faq-answer"><p>Да. Первое посещение — бесплатная диагностика с элементами занятия. Вы увидите студию, познакомитесь с педагогом и получите рекомендации.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Что взять с собой?</button>
+            <div class="faq-answer"><p>Сменную обувь для вас и ребёнка, сменную одежду для малыша, бутылочку воды. Всё остальное — в студии.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Что делать, если ребёнок плачет?</button>
+            <div class="faq-answer"><p>Это нормально. Мы не торопим и не заставляем. Мама может обнять, мы подождём. Постепенно ребёнок привыкает к пространству — обычно за 2–3 занятия.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 11: Контакты -->
+    <section class="screen" id="contact" aria-labelledby="contact-title">
+      <div class="screen-inner">
+        <div class="section-label"><span>Контакты и запись</span></div>
+        <h2 id="contact-title">Запишитесь на бесплатную диагностику</h2>
+        <div class="contact-grid" style="margin-top: 2rem;">
+          <div class="contact-info">
+            <div class="contact-item">
+              <h4>Адрес</h4>
+              <p>г. Ваш город, ул. Примерная, 10<br>Студии «Я и МАМА»</p>
+            </div>
+            <div class="contact-item">
+              <h4>Телефон</h4>
+              <p><a href="tel:+79001234567">+7 (900) 123-45-67</a></p>
+            </div>
+            <div class="contact-item">
+              <h4>Мессенджер MAX</h4>
+              <p><a href="https://max.ru/u/example" target="_blank" rel="noopener noreferrer">Написать в MAX</a></p>
+            </div>
+            <div class="contact-item">
+              <h4>Режим работы</h4>
+              <p>Вторник, Пятница: 9:00 — 18:00<br>Суббота: 10:00 — 14:00</p>
+            </div>
+          </div>
+          <form class="contact-form" aria-label="Форма записи">
+            <label>Имя родителя
+              <input type="text" name="name" required autocomplete="name" aria-required="true">
+            </label>
+            <label>Телефон
+              <input type="tel" name="phone" required autocomplete="tel" aria-required="true" placeholder="+7 (___) ___-__-__">
+            </label>
+            <label>Возраст ребёнка
+              <select name="age" required aria-required="true">
+                <option value="">Выберите</option>
+                <option value="0-1">0–1 год</option>
+                <option value="1-3">1–3 года</option>
+                <option value="3-5">3–5 лет</option>
+                <option value="5-7">5–7 лет</option>
+              </select>
+            </label>
+            <label>Направление
+              <select name="direction" required aria-required="true">
+                <option value="">Выберите</option>
+                <option value="montessori">Монтессори</option>
+                <option value="logo">Логоритмика</option>
+                <option value="both">Оба направления</option>
+              </select>
+            </label>
+            <label>Комментарий
+              <textarea name="message" rows="3" aria-label="Дополнительный комментарий"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Отправить заявку</button>
+          </form>
+        </div>
+        <div class="map-container" data-lazy-block>
+          <iframe data-src="https://yandex.ru/map-widget/v1/?um=constructor%3Aexample&amp;source=constructor" title="Карта расположения студии" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Я и МАМА</h4>
+        <p>Развивающие студии Монтессори и логоритмики. Ирина Сергеевна Кичигина — путь, посвящённый детям и их семьям.</p>
+        <div class="social-links" aria-label="Социальные сети">
+          <a href="#" aria-label="ВКонтакте">VK</a>
+          <a href="#" aria-label="Telegram">TG</a>
+          <a href="https://max.ru/u/example" aria-label="MAX">MAX</a>
+        </div>
+      </div>
+      <div>
+        <h4>Посетите</h4>
+        <ul class="footer-links">
+          <li><a href="montessori.html" data-fog-link>Студия Монтессори</a></li>
+          <li><a href="logorhythmics.html" data-fog-link>Студия Логоритмика</a></li>
+          <li><a href="#programs">Программы</a></li>
+          <li><a href="#blog">Блог</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Узнайте больше</h4>
+        <ul class="footer-links">
+          <li><a href="#about">О педагоге</a></li>
+          <li><a href="#methodology">Методика</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Запись</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Я и МАМА · Ирина Сергеевна Кичигина</span>
+      <span><a href="#" style="color: inherit;">Политика конфиденциальности</a></span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Наверх">&uarr;</button>
+
+  <div class="modal-overlay" aria-hidden="true" role="dialog" aria-label="Просмотр сертификата">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Закрыть">&times;</button>
+      <img src="" alt="">
+      <span class="modal-zoom">Нажмите для увеличения</span>
+    </div>
+  </div>
+
+  <div class="cookie-banner" role="dialog" aria-label="Уведомление о cookie">
+    <p>Мы используем cookie для улучшения работы сайта и анализа посещаемости. Продолжая использовать сайт, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+    <div class="cookie-actions">
+      <button class="cookie-accept">Принять</button>
+      <button class="cookie-decline">Отклонить</button>
+    </div>
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
